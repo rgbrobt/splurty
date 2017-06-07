@@ -1,20 +1,47 @@
-@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500|Rubik:900');
 
+@import "bootstrap";
 
 header {
     border-top: 9px solid #5cc45e;
 }
 
-hr {
+h1 {
+ // font-family: 'Rubik', sans-serif;
+    font-family: 'elliotsixregular';
+    font-weight: normal;
+}
+
+h2 {
+//  font-family: 'Oswald', sans-serif;
+//  font-family: 'aaarghnormal';
+    font-family: 'sorts_mill_goudyregular';
+    font-weight: normal; 
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+//  font-family: 'sorts_mill_goudyitalic';
+//  font-family: 'aaarghnormal';
+    font-weight: lighter;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.hr {
     clear: both;
+    color: #5cc45e;
 }
 .clear {
   clear: both;
 }
 
 .circle {
-    font-weight:bold;
-    font-style: italic;
+    font-family: 'Oswald', sans-serif;
+//  font-weight:bold;
+//  font-style: italic;
+    letter-spacing: 1.5px;
+    font-size: 18px;
     position: relative;
     border-radius: 100%;
     background: #f84342;
@@ -34,20 +61,24 @@ hr {
 
 
 .slogan {
-  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
-
-  font-style: italic;
-   padding-top: 37px;
-   padding-left: 10px;
+//  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+//  font-family: 'Oswald', sans-serif;
+    font-family: 'aaarghnormal';
+    font-size: 14px;
+    font-style: bold;
+    padding-top: 39px;
+    padding-left: 10px;
 
 }
 
 .links {
+  font-family: 'sorts_mill_goudyregular';
   padding-top: 30px;
   padding-left: 20px;
 }
 
 .links a {
+    
     color: black;
     font-size: 25px;
     border-bottom: 1px;
