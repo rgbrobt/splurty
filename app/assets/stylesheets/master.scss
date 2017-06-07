@@ -66,6 +66,7 @@ h3 {
     font-family: 'aaarghnormal';
     font-size: 14px;
     font-style: bold;
+    text-align: center;
     padding-top: 39px;
     padding-left: 10px;
 
@@ -73,6 +74,7 @@ h3 {
 
 .links {
   font-family: 'sorts_mill_goudyregular';
+  text-align: right;
   padding-top: 30px;
   padding-left: 20px;
 }
@@ -84,3 +86,16 @@ h3 {
     border-bottom: 1px;
 }
 
+.next-quote {
+  font-family: 'elliotsixregular';
+  font-size: 18px;
+  color: #5cc45e;
+}
+
+.footer-credits {
+  font-family: 'sorts_mill_goudyregular';
+  font-style: italic;
+  font-size: 10px;
+  text-align: right;
+
+}
