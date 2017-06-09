@@ -16,6 +16,7 @@
     <div class="container">
       <header class="row">
         <div class="col-3">
+        <%= link_to root_path , class: 'logo' do %>
           <div class="circle">
             <br />
             You know
@@ -24,6 +25,7 @@
             <br />
             laugh!
           </div>
+        <% end %>
         </div>
     
         <div class="col-5 slogan">
@@ -31,7 +33,7 @@
         </div>
     
         <div class="col-4 links">
-          <%= link_to 'Contribute', '#' %>
+          <%= link_to 'Contribute', new_quote_path %>
           <%= link_to 'About', '#' %>
         </div>
       </header>
@@ -51,7 +53,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <%= link_to "I want snacks! Give me s'more!", "#", class: 'next-quote' %>
+            <%= link_to "I want snacks! Give me s'more!", root_path, class: 'next-quote' %>
           </div>
           <div class="col-6 footer-credits">
             Proudly made in Atlanta, GA by <a href="http://rgarvin.getforge.io/">Robert</a>. <!-- at <a href="https://www.thefirehoseproject.com/">The Firehose Project.</a> -->
