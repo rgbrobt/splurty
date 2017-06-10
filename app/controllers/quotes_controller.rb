@@ -9,6 +9,9 @@ class QuotesController < ApplicationController
 
   def create
     @quote = Quote.create(quote_params)
+    if @quote.invalid?
+      flash[:error] = '<strong>Oops! You broke it.</strong> Just kidding! Try entering your quote again.'
+    end
     redirect_to root_path
   end
 
