@@ -10,6 +10,7 @@ h1 {
  // font-family: 'Rubik', sans-serif;
     font-family: 'elliotsixregular';
     font-weight: normal;
+    text-align: center;
 }
 
 h2 {
@@ -17,6 +18,12 @@ h2 {
 //  font-family: 'aaarghnormal';
     font-family: 'sorts_mill_goudyregular';
     font-weight: normal; 
+    text-align: center;
+}
+
+h2 span {
+  color: #dddddd;
+  font-family: 'Oswald';
 }
 
 h3 {
@@ -26,6 +33,7 @@ h3 {
     font-weight: lighter;
     font-size: 20px;
     font-style: italic;
+//  text-align: right;
 }
 
 .hr {
@@ -97,7 +105,6 @@ h3 {
   font-style: italic;
   font-size: 10px;
   text-align: right;
-
 }
 
 .logo:hover {
@@ -106,4 +113,23 @@ h3 {
 
 .about {
   font-family: 'aaarghnormal';
+}
+
+@media (max-width: 750px) {
+  .footer-credits {
+    text-align: left;
+  }
+  .links {
+    text-align: left;
+  }
+}
+
+
+.modal {
+  // font-family: "sorts_mill_goudyregular";
+     font-family: 'Oswald', sans-serif;
+}
+
+::selection {
+  background-color: #5cc45e
 }

@@ -27,13 +27,14 @@
         <% end %>
         </div>
     
-        <div class="col-5 slogan">
+        <div class="col col-sm-5 hidden-xs-down slogan">
           The most "pun" you'll have all day!
         </div>
     
-        <div class="col-4 links">
+        <div class="col-10 offset-1 offset-sm-0 col-sm-4 links">
           <!-- Button trigger modal -->
           <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#ContributeForm'} %>
+          &nbsp;&nbsp;
           <%= link_to 'About', about_path %>
         </div>
       </header>
@@ -50,16 +51,17 @@
              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                <span aria-hidden="true">×</span>
              </button>
-             <h4 class="modal-title" id="myModalLabel">Give us your best groaner!</h4>
+             <h4 class="modal-title" id="myModalLabel">Give us your best puns!</h4>
            </div>
            <%= simple_form_for Quote.new do |f| %>
              <div class="modal-body">
-               <%= f.input :saying1 %>
-               <%= f.input :punchline %>
+               <%= f.input :saying1, label: "Joke", placeholder: "There was a big paddle sale at the boat store..." %>
                <br />
-               <%= f.input :author %>
+               <%= f.input :punchline, label: "Punchline", placeholder: "... It was quite an oar deal." %>
+               <br />
+               <%= f.input :author, label: "Author", placeholder: "(Or your name!)" %>
              </div>
-               <br />
+             
              <div class="modal-footer">
                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
                <%= f.submit 'Create', class: 'btn btn-primary' %>
@@ -91,10 +93,10 @@
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-sm-6">
             <%= link_to "I want snacks! Give me s'more!", root_path, class: 'next-quote' %>
           </div>
-          <div class="col-6 footer-credits">
+          <div class="col-12 col-sm-6 footer-credits">
             Proudly made in Atlanta, GA by <a href="http://rgarvin.getforge.io/">Robert</a>. <!-- at <a href="https://www.thefirehoseproject.com/">The Firehose Project.</a> -->
           </div>
         </div>
