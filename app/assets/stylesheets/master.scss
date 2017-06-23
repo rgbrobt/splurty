@@ -131,5 +131,10 @@ h3 {
 }
 
 ::selection {
-  background-color: #5cc45e
+  background-color: #5cc45e;
+}
+
+
+abbr[title] {
+  text-decoration: none;
 }
